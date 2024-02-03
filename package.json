@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "jsonwebtoken": "^9.0.2",
-    "validator": "^13.11.0"
-  }
-}
