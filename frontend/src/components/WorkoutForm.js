@@ -5,11 +5,12 @@ import { useAuthContext } from "../hooks/useAuthContext";
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutContext();
   const { user } = useAuthContext();
+  const [emptyFields, setEmptyFields] = useState([]);
+
   const [title, setTitle] = useState("");
   const [load, setLoad] = useState("");
   const [reps, setReps] = useState("");
   const [error, setError] = useState(null);
-  const [emptyFields, setEmptyFields] = useState([]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
